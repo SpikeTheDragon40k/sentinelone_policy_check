@@ -142,16 +142,6 @@ euce1-109;Acme Corp;HQ Site;Servers - Production;Protection Mode;Suspicious Thre
 Keep the baseline up to date: whenever new settings or values appear in the
 console, update `policy_matrix.txt` accordingly.
 
-## Security notes
-
-- **Never commit** real API tokens. Use `.env` locally and keep it out of the
-  repository.
-- TLS certificate verification is always enforced by the HTTP client.
-- Tokens are only read from the environment; the script never writes them to
-  any file.
-- A `.gitignore` is included to prevent accidental commits of `.env`,
-  `__pycache__/`, and export outputs.
-
 ## License
 
-This project is intended for internal security/ops use. Add your license here if you plan on distributing it.
+GNU 3.0
