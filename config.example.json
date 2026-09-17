@@ -1,0 +1,12 @@
+{
+  "tenants": [
+    {
+      "name": "euce1-104",
+      "url": "https://euce1-104.sentinelone.net/web/api/v2.1"
+    },
+    {
+      "name": "euce1-109",
+      "url": "https://euce1-109.sentinelone.net/web/api/v2.1"
+    }
+  ]
+}

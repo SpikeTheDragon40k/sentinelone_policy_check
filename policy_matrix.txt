@@ -1,0 +1,46 @@
+Section;Setting;Default Value;ExpectedValue
+Agent;Agent UI;Enabled;Enabled
+Detection Engines;Anti Exploitation / Fileless;Enabled;Enabled
+Agent;Anti Tamper;Enabled;Enabled
+Detection Engines;Application Control (Containers only);Disabled;Enabled
+Browser Extensions;Automatically install the SentinelOne Browser Extension;Disabled;Depends on the customer
+Detection Engines;Behavioral AI – Executables;Enabled;Enabled
+Event Collection;Behavioral Indicators;Disabled;Enabled
+Event Collection;Command Script;Disabled;Enabled
+Protection Mode;Containment: Disconnect from network;Disable;Disable
+Event Collection;Cross Process;Disabled;Enabled
+Event Collection;Data Masking;Disabled;Disabled
+Detection Engines;Detect Interactive Threat;Disabled;Enabled
+Event Collection;DNS;Disabled;Enabled
+Detection Engines;Documents, Scripts;Enabled;Enabled
+Event Collection;Driver Load;Disabled;Enabled
+Agent;Events from the last;30 days;30 days
+Event Collection;External Devices;;
+Event Collection;File;Disabled;Enabled
+Event Collection;Focused File Monitoring;Disabled;Disabled
+Event Collection;IP;Disabled;Enabled
+Detection Engines;Lateral Movement;Enabled;Enabled
+Agent;Logging;Enabled;Enabled
+Event Collection;Login;Disabled;Enabled
+Protection Mode;Malicious Macro Mitigation;Disable;Disable
+Protection Mode;Malicious Threats;Protect;Protect
+Event Collection;Open Directory Activity;;
+Agent;Pop-Up Notifications;Enabled;Enabled
+Detection Engines;Potentially Unwanted Applications;Enabled;Enabled
+Event Collection;Process;Disabled;Enabled
+Event Collection;Profile Activity;;
+Protection Mode;Protect Level;Kill & Quarantine;Kill & Quarantine
+Event Collection;Registry Keys;Disabled;Enabled
+Detection Engines;Reputation;Enabled;Enabled
+Agent;Scan New Agents;Enabled;Enabled
+Event Collection;Scheduled Tasks;Disabled;Enabled
+Agent;Snapshots;Enabled;Enabled
+Detection Engines;Static AI;Enabled;Enabled
+Detection Engines;Static AI - Suspicious;Enabled;Enabled
+Agent;Suspicious Driver Blocking;Enabled;Enabled
+Agent;Suspicious events in the UI;Enabled;Enabled
+Protection Mode;Suspicious Threats;Detect;Protect
+Event Collection;URL;Disabled;Enabled
+Event Collection;User Substitution;;
+Agent;Warning in case of Agent errors;Disabled;Disabled
+Detection Engines;Wayfinder Threat Hunting;;
