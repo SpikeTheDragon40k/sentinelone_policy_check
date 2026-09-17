@@ -28,8 +28,8 @@ Works on **Linux, macOS and Windows**. No third-party dependencies.
 ## Installation
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/SpikeTheDragon40k/sentinelone_policy_check
+cd sentinelone_policy_check
 
 # Set up your environment (single tenant)
 cp .env.example .env
