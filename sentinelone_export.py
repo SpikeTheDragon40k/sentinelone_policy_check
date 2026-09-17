@@ -8,7 +8,7 @@ optionally a compliance report comparing against a baseline matrix.
 
 Usage:
     python3 sentinelone_export.py --output ./output
-    python3 sentinelone_export.py --output ./output --baseline "./Matrice Normalizzata.txt"
+    python3 sentinelone_export.py --output ./output --baseline ./policy_matrix.txt
     python3 sentinelone_export.py --output ./output --baseline ./baseline.csv --no-compliance
 
 Environment variables (single tenant):
@@ -333,7 +333,7 @@ def write_csv(rows: list[dict], filepath: Path, fields: list[str] | None = None)
 # ---------------------------------------------------------------------------
 
 def load_baseline(filepath: Path) -> list[dict]:
-    """Load Matrice Normalizzata baseline CSV."""
+    """Load policy_matrix baseline CSV."""
     rows = []
     with open(filepath, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter=";")
@@ -563,7 +563,7 @@ Examples:
 
   # With compliance check
   S1_API_TOKEN=xxx S1_TENANT_URL=https://euce1-104.sentinelone.net/web/api/v2.1 \\
-      python3 sentinelone_export.py --output ./output --baseline "./Matrice Normalizzata.txt"
+      python3 sentinelone_export.py --output ./output --baseline ./policy_matrix.txt
 
   # Multi-tenant
   S1_API_TOKENS='{"t1":"tok_a","t2":"tok_b"}' \\
@@ -575,7 +575,7 @@ Examples:
 """,
     )
     p.add_argument("--output", "-o", default=None, help="Output directory (default: ./SentinelOne_Policies)")
-    p.add_argument("--baseline", "-b", default=None, help="Path to baseline CSV (e.g. Matrice Normalizzata.txt)")
+    p.add_argument("--baseline", "-b", default=None, help="Path to baseline CSV (e.g. policy_matrix.txt)")
     p.add_argument("--no-compliance", action="store_true", help="Skip compliance check even if --baseline is provided")
     p.add_argument("--timeout", type=int, default=None, help="HTTP request timeout in seconds (default: 30)")
     p.add_argument("--retries", type=int, default=None, help="Max retries per API call (default: 3)")
